@@ -7,6 +7,22 @@ için olabilir.)
 2. @SpringBootApplication anotasyonu hangi anotasyonları kapsamaktadır ? Görevlerini kısaca açıklayınız.
 </h3>
 
+<p>
+  @SpringBootApplication anotasyonu 3 anotasyon kapsamaktadır:
+  
+  <ul>
+    <li>
+      @Configuration: Bir sınıfın @Bean anotasyonu sahip olduğunu gösterir
+    </li>
+    <li>
+      @EnableAutoConfiguration: auto-configuration özelliğine izin verir. Auto-configuration, bir geliştircinin ihtıyac duyacağı Bean'ler bulmaya çalışıyordur.
+    </li>
+    <li>
+      @ComponentScan: Spring bileşenlerin taramasına izin verir. Java'da, @Component, @Configuration, @Service'a göre yazılan sınıflar, Spring tarafından otomatik olarak algılanır. @ComponentScan, taranması gereken bileşenleri belirliyor.
+    </li>
+</ul>
+</p>
+
 <h3>
 3. @Primary, @Qualifier anotasyonlarının kullanım amaçlarını açıklayınız.
 </h3>
