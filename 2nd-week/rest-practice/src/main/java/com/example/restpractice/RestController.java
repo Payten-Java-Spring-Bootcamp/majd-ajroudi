@@ -76,13 +76,24 @@ public class RestController {
         return members;
     }
 
+    @GetMapping("/members/{id}")
+    public Member retrieveSingleMember(@PathVariable String id) {
+        Member targetMember = members.stream()
+                .filter(member -> member.getId() == id)
+                .findAny()
+                .orElse(null);
+
+        System.out.println("found member: " + targetMember);
+        return targetMember;
+    }
+
     @PostMapping("/members")
     public Member createMember(@RequestBody Member member) {
         members.add(
                 Member.builder()
                         .id(member.getId())
                         .name(member.getName())
-                        .watchList(member.getWatchList())
+                        .watchlist(member.getWatchlist())
                         .build()
         );
 

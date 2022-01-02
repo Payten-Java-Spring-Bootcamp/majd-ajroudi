@@ -9,9 +9,13 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-public class Member {
+public class Watchlist {
     private String name;
-    private Watchlist watchlist;
-    private String id;
+    private List<Movie> movies;
+
+    public Boolean addMovie(Movie movie) {
+        this.movies.add(movie);
+        return true;
+    }
 
 }
