@@ -8,8 +8,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@RestController
-public class MoviesController {
+@org.springframework.web.bind.annotation.RestController
+public class RestController {
+
+    ArrayList<Member> members = new ArrayList<>();
 
     ArrayList<Movie> movies = new ArrayList<>(Arrays.asList(
             Movie.builder()
@@ -22,6 +24,8 @@ public class MoviesController {
                             "Rupert Grint",
                             "Toby Jones"
                     ))
+                    .points(3.9)
+                    .id("movie-0")
                     .releaseYear("2002")
                     .genres(List.of(Genres.FANTASY, Genres.CHILDREN, Genres.MYSTERY))
                     .director("Chris Columbus")
@@ -30,6 +34,8 @@ public class MoviesController {
                     .name("Spider-Man: No Way Home")
                     .releaseYear("2021")
                     .genres(List.of(Genres.ACTION, Genres.ADVENTURE, Genres.FANTASY))
+                    .points(4.3)
+                    .id("movie-2")
                     .cast(List.of(
                             "Tom Holland",
                             "Tobey Maguire",
@@ -63,5 +69,23 @@ public class MoviesController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteMovie() {
 
+    }
+
+    @GetMapping("/members")
+    public List<Member> retrieveMembers() {
+        return members;
+    }
+
+    @PostMapping("/members")
+    public Member createMember(@RequestBody Member member) {
+        members.add(
+                Member.builder()
+                        .id(member.getId())
+                        .name(member.getName())
+                        .watchList(member.getWatchList())
+                        .build()
+        );
+
+        return members.get(members.size() - 1);
     }
 }

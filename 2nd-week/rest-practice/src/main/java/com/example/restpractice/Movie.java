@@ -16,4 +16,5 @@ public class Movie {
     private String releaseYear;
     private List<String> cast;
     private String id;
+    private Double points;
 }
