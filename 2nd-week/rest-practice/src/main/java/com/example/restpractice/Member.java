@@ -9,11 +9,8 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-public class Movie {
+public class Member {
     private String name;
-    private List<Genres> genres;
-    private String director;
-    private String releaseYear;
-    private List<String> cast;
+    private List<Movie> watchList;
     private String id;
 }
