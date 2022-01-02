@@ -1,7 +1,11 @@
 package com.example.restpractice;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
+@RestController
 public class MoviesController {
 
     List<Movie> movies = List.of(
@@ -32,5 +36,20 @@ public class MoviesController {
                     .build()
     );
 
+    @GetMapping("/movies")
+    public List<Movie> retrieveMovies() {
+        return movies;
+    }
 
+    @PostMapping("/movies")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Movie addMovie(@RequestBody Movie movie) {
+        return Movie.builder()
+                .name(movie.getName())
+                .director(movie.getDirector())
+                .genres(movie.getGenres())
+                .cast(movie.getCast())
+                .releaseYear(movie.getReleaseYear())
+                .build();
+    }
 }
