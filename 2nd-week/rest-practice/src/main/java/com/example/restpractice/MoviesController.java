@@ -1,14 +1,17 @@
 package com.example.restpractice;
 
+import org.jetbrains.annotations.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
 public class MoviesController {
 
-    List<Movie> movies = List.of(
+    ArrayList<Movie> movies = new ArrayList<>(Arrays.asList(
             Movie.builder()
                     .name("Harry Potter and The Chamber of Secrets")
                     .cast(List.of(
@@ -34,7 +37,7 @@ public class MoviesController {
                     ))
                     .director("Jon Watts")
                     .build()
-    );
+    ));
 
     @GetMapping("/movies")
     public List<Movie> retrieveMovies() {
@@ -43,13 +46,22 @@ public class MoviesController {
 
     @PostMapping("/movies")
     @ResponseStatus(HttpStatus.CREATED)
-    public Movie addMovie(@RequestBody Movie movie) {
-        return Movie.builder()
-                .name(movie.getName())
-                .director(movie.getDirector())
-                .genres(movie.getGenres())
-                .cast(movie.getCast())
-                .releaseYear(movie.getReleaseYear())
-                .build();
+    public Movie addMovie(@NotNull @RequestBody Movie movie) {
+        movies.add(
+                Movie.builder()
+                        .name(movie.getName())
+                        .director(movie.getDirector())
+                        .genres(movie.getGenres())
+                        .cast(movie.getCast())
+                        .releaseYear(movie.getReleaseYear())
+                        .build()
+        );
+        return movies.get(movies.size() -1);
+    }
+
+    @DeleteMapping("/movies/{movieName}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteMovie() {
+
     }
 }
