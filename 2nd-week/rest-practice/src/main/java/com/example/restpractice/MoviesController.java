@@ -20,13 +20,13 @@ public class MoviesController {
                             "Toby Jones"
                     ))
                     .releaseYear("2002")
-                    .genres(Genres.FANTASY)
+                    .genres(List.of(Genres.FANTASY, Genres.CHILDREN, Genres.MYSTERY))
                     .director("Chris Columbus")
                     .build(),
             Movie.builder()
                     .name("Spider-Man: No Way Home")
                     .releaseYear("2021")
-                    .genres(Genres.ACTION)
+                    .genres(List.of(Genres.ACTION, Genres.ADVENTURE, Genres.FANTASY))
                     .cast(List.of(
                             "Tom Holland",
                             "Tobey Maguire",

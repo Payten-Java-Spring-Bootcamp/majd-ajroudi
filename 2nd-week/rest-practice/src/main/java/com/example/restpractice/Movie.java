@@ -11,7 +11,7 @@ import java.util.List;
 @Builder
 public class Movie {
     private String name;
-    private Genres genres;
+    private List<Genres> genres;
     private String director;
     private String releaseYear;
     private List<String> cast;
