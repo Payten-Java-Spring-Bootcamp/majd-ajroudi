@@ -107,4 +107,30 @@ public class RestController {
         targetMember.addNewList(newList);
         return targetMember;
     }
+
+    @PutMapping("/members/{memberId}")
+    public Member addMovieToWatchlist(@RequestParam String newMovieId,
+                                      @RequestParam String listId,
+                                      @PathVariable String memberId) {
+        Member targetMember = members.stream()
+                .filter(currMember -> currMember.getId().equals(memberId))
+                .findAny()
+                .orElse(null);
+
+        Watchlist targetList = targetMember.getWatchlist().stream()
+                .filter(currList -> currList.getId().equals(listId))
+                .findAny()
+                .orElse(null);
+
+        Movie newMovie = movies.stream()
+                .filter(currMovie -> currMovie.getId().equals(newMovieId))
+                .findAny()
+                .orElse(null);
+
+        if (newMovie != null) {
+            targetList.addMovie(newMovie);
+        }
+
+        return targetMember;
+    }
 }

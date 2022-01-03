@@ -3,6 +3,7 @@ package com.example.restpractice;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -12,10 +13,10 @@ import java.util.List;
 public class Watchlist {
     private String name;
     private List<Movie> movies;
+    private String id;
 
-    public Boolean addMovie(Movie movie) {
+    public void addMovie(@NotNull Movie movie) {
         this.movies.add(movie);
-        return true;
     }
 
 }

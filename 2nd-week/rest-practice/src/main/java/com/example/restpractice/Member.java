@@ -20,6 +20,7 @@ public class Member {
                 Watchlist.builder()
                         .name(newList.getName())
                         .movies(newList.getMovies())
+                        .id(newList.getId())
                         .build()
         );
     }
