@@ -3,6 +3,7 @@ package com.example.restpractice;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -11,7 +12,15 @@ import java.util.List;
 @Builder
 public class Member {
     private String name;
-    private Watchlist watchlist;
+    private List<Watchlist> watchlist;
     private String id;
 
+    public void addNewList(@NotNull Watchlist newList){
+        this.watchlist.add(
+                Watchlist.builder()
+                        .name(newList.getName())
+                        .movies(newList.getMovies())
+                        .build()
+        );
+    }
 }

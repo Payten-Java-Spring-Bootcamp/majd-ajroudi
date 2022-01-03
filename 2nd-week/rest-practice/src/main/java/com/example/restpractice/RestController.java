@@ -78,13 +78,10 @@ public class RestController {
 
     @GetMapping("/members/{id}")
     public Member retrieveSingleMember(@PathVariable String id) {
-        Member targetMember = members.stream()
-                .filter(member -> member.getId() == id)
+        return members.stream()
+                .filter(member -> member.getId().equals(id))
                 .findAny()
                 .orElse(null);
-
-        System.out.println("found member: " + targetMember);
-        return targetMember;
     }
 
     @PostMapping("/members")
@@ -98,5 +95,16 @@ public class RestController {
         );
 
         return members.get(members.size() - 1);
+    }
+
+    @PostMapping("/members/{id}")
+    public Member addWatchlistToMember(@RequestBody Watchlist newList, @PathVariable String id) {
+        Member targetMember = members.stream()
+                .filter(currMember -> currMember.getId().equals(id))
+                .findAny()
+                .orElse(null);
+
+        targetMember.addNewList(newList);
+        return targetMember;
     }
 }
