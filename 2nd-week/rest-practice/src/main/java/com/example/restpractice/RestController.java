@@ -97,6 +97,19 @@ public class RestController {
         return members.get(members.size() - 1);
     }
 
+    @PutMapping("/movies/{movieId}")
+    public Movie rateMovie(@RequestBody Double rate, @PathVariable String movieId) {
+        Movie targetMovie = movies.stream()
+                .filter( currMovie -> currMovie.getId().equals(movieId))
+                .findAny()
+                .orElse(null);
+
+        Double newTotalRate = (targetMovie.getPoints() + rate) / 2;
+        targetMovie.setPoints(newTotalRate);
+
+        return targetMovie;
+    }
+
     @PostMapping("/members/{id}")
     public Member addWatchlistToMember(@RequestBody Watchlist newList, @PathVariable String id) {
         Member targetMember = members.stream()
