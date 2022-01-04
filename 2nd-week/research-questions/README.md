@@ -75,6 +75,16 @@ AOP advantages:
 10. Idempotency nedir ? Hangi HTTP metotları idempotent’ tir ?
 </h3>
 
+<p>
+  Idempotency is the concept that an identical request sent multiple times will always have the same effect. This concept is used to avoid mistakes from the client-side code. The client code might be written in a way that unintentionally sends duplicate requests. This mistake should handled to avoid errors on the server. 
+  
+  GET: will always respond with the same result without making significant changes to the server. 
+  PUT: is used to update existing entity in the server. Assuming that PUT method has been triggered N times, then the Nth request will always overwrite the N-1 request.
+  DELETE: is used to remove an entity from the server. The first request will receive a response status of 200 or 204, and all the trailing requests will receive a response status 404 (Not Found) because the entity has already been deleted at the first request. Although the response is different, the requests do not change the server in a different way. 
+  
+  Thus, GET, PUT, and DELETE are considered Idempotent methods. 
+</p>
+
 <h3>
 11. RFC (Request For Comment) neyi ifade etmektedir ? HTTP hangi RFC dokümanında açıklanmıştır ? Bu dokümanda HTTP hakkında
 ne tür bilgiler yer almaktadır ?
