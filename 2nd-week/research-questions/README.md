@@ -35,6 +35,16 @@ için olabilir.)
 5. Aspect Oriented Programlama nedir ? Avantajları ve dezavantajları nelerdir ?
 </h3>
 
+<p>
+AOP is a paradigm that complements OOP. While OOP uses the unit of Object (Class) to organize program structure, AOP uses the unit of aspect. Aspect can be any functionality/feature in the program. Examples of aspects: Money transition management, Security, Logging. 
+
+AOP advantages:
+- Better documentation, maintainability and avoiding comments.
+- Easier to add features to a program
+- loose coupling
+- improve code reusability.
+</p>
+
 <h3>
 6. SOLID prensiplerini kısaca açıklayınız. Sizce her koşulda bu prensipler çerçevesinde mi kod yazılmalıdır ? Neden ?
 </h3>
