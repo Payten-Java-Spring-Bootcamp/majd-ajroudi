@@ -47,6 +47,16 @@ için olabilir.)
 8. Richardson Maturity Model’i seviyeleriyle birlikte açıklayınız.
 </h3>
 
+<p>
+  It is a model that was designed to breakdown the REST practices into three steps (levels).
+  
+  Level 1: The first level of the model deals with resources. This level includes developing multiple endpoints instead of sending all requests to one single endpoint.
+  
+  Level 2: In this level, we make use of the several HTTP verbs (methods). For instance, if the client is not making critical changes in the database or all they are doing is retrieving data from the server, then the client should use GET. In other cases, the client might be booking an appointment  or changing an existing appointment then the client should use POST and PUT, respectively.
+  
+  Level 3: When the client receives the response for a submitted request, they have to know the URI required for other requests. In the third level, the server sends the URIs the might be needed by the client to tell them what kind of services they can receive and how they can receive them.
+</p>
+
 <h3>
 9. URL, URI, URN kavramlarını bir örnek üzerinden açıklayınız.
 </h3>
