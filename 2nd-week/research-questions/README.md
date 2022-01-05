@@ -3,6 +3,8 @@
 için olabilir.)
 </h4>
 
+<hr/>
+
 <h4>
 2. @SpringBootApplication anotasyonu hangi anotasyonları kapsamaktadır ? Görevlerini kısaca açıklayınız.
 </h4>
@@ -23,6 +25,7 @@ için olabilir.)
 </ul>
 </p>
 
+<hr/>
 <h4>
 3. @Primary, @Qualifier anotasyonlarının kullanım amaçlarını açıklayınız.
 </h4>
@@ -36,10 +39,12 @@ Bir Spring projesinde, bir Interface birden fazla Bean tarafından uygulanıyors
 @Primary: Bu anotasyonu kullanarak Spring'e "Adı varsayılan Bean olarak belirtilen Bean'i kullan, ancak @Qualifier başka bir yerde kullanılıyorsa Bean'i @Qualifier anotasyonu kullanın" diyoruz.
 </p>
 
+<hr/>
 <h4>
 4. Convention over configuration kavramını seçtiğiniz bir örnek üzerinden açıklayınız.
 </h4>
 
+<hr/>
 <h4>
 5. Aspect Oriented Programlama nedir ? Avantajları ve dezavantajları nelerdir ?
 </h4>
@@ -54,14 +59,17 @@ AOP advantages:
 - improve code reusability.
 </p>
 
+<hr/>
 <h4>
 6. SOLID prensiplerini kısaca açıklayınız. Sizce her koşulda bu prensipler çerçevesinde mi kod yazılmalıdır ? Neden ?
 </h4>
 
+<hr/>
 <h4>
 7. Swagger nedir, ne amaçla kullanılmaktadır ?
 </h4>
 
+<hr/>
 <h4>
 8. Richardson Maturity Model’i seviyeleriyle birlikte açıklayınız.
 </h4>
@@ -76,10 +84,35 @@ AOP advantages:
   Level 3: When the client receives the response for a submitted request, they have to know the URI required for other requests. In the third level, the server sends the URIs the might be needed by the client to tell them what kind of services they can receive and how they can receive them.
 </p>
 
+<hr/>
 <h4>
 9. URL, URI, URN kavramlarını bir örnek üzerinden açıklayınız.
 </h4>
 
+<p>
+URL ve URN, URI'nin alt kümeleridir. Ancak bir URI, bir URL veya bir URN olabilir.
+URI: internette bir kaynağı veya adı tanımlamak için kullanılan bir String'dir.
+
+URL, internette bir kaynağı bulmak için kullanılan bir String'dir. bir URL, protokol, domain, port, path, ve sorgudan oluşur
+
+  Bir URL örneği: <i>https://www.patika.dev/bootcamp</i>
+
+protokol: https
+  
+www.patika.dev: domain
+  
+path: /bootcamp
+
+URN, internette bir adı tanımlamak için kullanılan bir String'dir. bir URN, urn scheme specification, namespace identifier ve namespace-specific string (NSS)'den oluşur.
+
+Bir URL örneği: <i> urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66</i>
+
+urn scheme specification: urn
+namespace identifier: uuid
+namespace-specific string (NSS): 6e8bc430-9c3a-11d9-9669-0800200c9a66
+</p>
+
+<hr/>
 <h4>
 10. Idempotency nedir ? Hangi HTTP metotları idempotent’ tir ?
 </h4>
@@ -94,6 +127,7 @@ AOP advantages:
   Thus, GET, PUT, and DELETE are considered Idempotent methods. 
 </p>
 
+<hr/>
 <h4>
 11. RFC (Request For Comment) neyi ifade etmektedir ? HTTP hangi RFC dokümanında açıklanmıştır ? Bu dokümanda HTTP hakkında
 ne tür bilgiler yer almaktadır ?
