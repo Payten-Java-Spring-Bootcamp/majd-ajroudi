@@ -1,11 +1,11 @@
-<h3>
+<h4>
 1. Spring dışında dependency injection için kullanabileceğimiz framework’ler / kütüphaneler nelerdir ? (Herhangi bir programlama dili
 için olabilir.)
-</h3>
+</h4>
 
-<h3>
+<h4>
 2. @SpringBootApplication anotasyonu hangi anotasyonları kapsamaktadır ? Görevlerini kısaca açıklayınız.
-</h3>
+</h4>
 
 <p>
   @SpringBootApplication anotasyonu 3 anotasyon kapsamaktadır:
@@ -23,17 +23,26 @@ için olabilir.)
 </ul>
 </p>
 
-<h3>
+<h4>
 3. @Primary, @Qualifier anotasyonlarının kullanım amaçlarını açıklayınız.
-</h3>
+</h4>
 
-<h3>
+<p>
+
+Bir Spring projesinde, bir Interface birden fazla Bean tarafından uygulanıyorsa, Spring hangi Bean'i kullanması gerektiğine karar veremediği için hata veriyor. Bu sorun @Qualifier veya @Primary anotasyonları kullanılarak çözülebilir:
+
+@Qualifier: Bu anotasyonu kullanarak Spring'e "Interface'i kaç tane Bean kullanıyor olursa olsun, adı geçen belirli Bean'i kullan" diyoruz.
+
+@Primary: Bu anotasyonu kullanarak Spring'e "Adı varsayılan Bean olarak belirtilen Bean'i kullan, ancak @Qualifier başka bir yerde kullanılıyorsa Bean'i @Qualifier anotasyonu kullanın" diyoruz.
+</p>
+
+<h4>
 4. Convention over configuration kavramını seçtiğiniz bir örnek üzerinden açıklayınız.
-</h3>
+</h4>
 
-<h3>
+<h4>
 5. Aspect Oriented Programlama nedir ? Avantajları ve dezavantajları nelerdir ?
-</h3>
+</h4>
 
 <p>
 AOP is a paradigm that complements OOP. While OOP uses the unit of Object (Class) to organize program structure, AOP uses the unit of aspect. Aspect can be any functionality/feature in the program. Examples of aspects: Money transition management, Security, Logging. 
@@ -45,17 +54,17 @@ AOP advantages:
 - improve code reusability.
 </p>
 
-<h3>
+<h4>
 6. SOLID prensiplerini kısaca açıklayınız. Sizce her koşulda bu prensipler çerçevesinde mi kod yazılmalıdır ? Neden ?
-</h3>
+</h4>
 
-<h3>
+<h4>
 7. Swagger nedir, ne amaçla kullanılmaktadır ?
-</h3>
+</h4>
 
-<h3>
+<h4>
 8. Richardson Maturity Model’i seviyeleriyle birlikte açıklayınız.
-</h3>
+</h4>
 
 <p>
   It is a model that was designed to breakdown the REST practices into three steps (levels).
@@ -67,13 +76,13 @@ AOP advantages:
   Level 3: When the client receives the response for a submitted request, they have to know the URI required for other requests. In the third level, the server sends the URIs the might be needed by the client to tell them what kind of services they can receive and how they can receive them.
 </p>
 
-<h3>
+<h4>
 9. URL, URI, URN kavramlarını bir örnek üzerinden açıklayınız.
-</h3>
+</h4>
 
-<h3>
+<h4>
 10. Idempotency nedir ? Hangi HTTP metotları idempotent’ tir ?
-</h3>
+</h4>
 
 <p>
   Idempotency is the concept that an identical request sent multiple times will always have the same effect. This concept is used to avoid mistakes from the client-side code. The client code might be written in a way that unintentionally sends duplicate requests. This mistake should handled to avoid errors on the server. 
@@ -85,7 +94,7 @@ AOP advantages:
   Thus, GET, PUT, and DELETE are considered Idempotent methods. 
 </p>
 
-<h3>
+<h4>
 11. RFC (Request For Comment) neyi ifade etmektedir ? HTTP hangi RFC dokümanında açıklanmıştır ? Bu dokümanda HTTP hakkında
 ne tür bilgiler yer almaktadır ?
-</h3>
+</h4>
