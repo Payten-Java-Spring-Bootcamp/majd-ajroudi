@@ -134,7 +134,7 @@ ne tür bilgiler yer almaktadır ?
 </h4>
 
 <p>
-Request for Comment: an offical document published by Internet Engineering Task Force to describe a patricular technology specifications. When an RFC is ratified, it becomes a formal standard document. After ratification, no further changes are allowed on the document.
+Request for Comment (RFC): Bir teknolojinin özelliklerini açıklamak için Internet Engineering Task Force (IETF) tarafından yayınlanan bir belge. Bir RFC onaylandığında, resmi bir standart belge haline gelir. Onaydan sonra, belge üzerinde her hangi bir değişiklik yapılmasına izin verilmez.
 
-In January 1997 RFC 2068 was officially released as HTTP/1.1 specifications.
+HTTP/1.1 spesifikasyonları, Ocak 1997'de RFC 2068 dokümanında resmi olarak yayınlandı.
 </p>
