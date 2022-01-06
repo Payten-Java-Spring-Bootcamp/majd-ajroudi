@@ -44,6 +44,11 @@ Bir Spring projesinde, bir Interface birden fazla Bean tarafından uygulanıyors
 4. Convention over configuration kavramını seçtiğiniz bir örnek üzerinden açıklayınız.
 </h2>
 
+<p>
+  Bir geliştircinin koda en az şekilde müdahale etmesine sağlayan ve framework'lar tarafından kullanılan bir prensiptir. Yani,bir geliştirici yalnızca kendi istediği sonuç genel düzenden farklıysa özel bir configuration dosyalara müdahale eder. Onun dışında, diğer configuration dosyaları framework tarafından sunulmaktadır.
+  
+</p>
+
 <hr/>
 <h2>
 5. Aspect Oriented Programlama nedir ? Avantajları ve dezavantajları nelerdir ?
