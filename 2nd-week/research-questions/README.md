@@ -1,13 +1,13 @@
-<h4>
+<h2>
 1. Spring dışında dependency injection için kullanabileceğimiz framework’ler / kütüphaneler nelerdir ? (Herhangi bir programlama dili
 için olabilir.)
-</h4>
+</h2>
 
 <hr/>
 
-<h4>
+<h2>
 2. @SpringBootApplication anotasyonu hangi anotasyonları kapsamaktadır ? Görevlerini kısaca açıklayınız.
-</h4>
+</h2>
 
 <p>
   @SpringBootApplication anotasyonu 3 anotasyon kapsamaktadır:
@@ -26,9 +26,9 @@ için olabilir.)
 </p>
 
 <hr/>
-<h4>
+<h2>
 3. @Primary, @Qualifier anotasyonlarının kullanım amaçlarını açıklayınız.
-</h4>
+</h2>
 
 <p>
 
@@ -40,14 +40,14 @@ Bir Spring projesinde, bir Interface birden fazla Bean tarafından uygulanıyors
 </p>
 
 <hr/>
-<h4>
+<h2>
 4. Convention over configuration kavramını seçtiğiniz bir örnek üzerinden açıklayınız.
-</h4>
+</h2>
 
 <hr/>
-<h4>
+<h2>
 5. Aspect Oriented Programlama nedir ? Avantajları ve dezavantajları nelerdir ?
-</h4>
+</h2>
 
 <p>
 AOP is a paradigm that complements OOP. While OOP uses the unit of Object (Class) to organize program structure, AOP uses the unit of aspect. Aspect can be any functionality/feature in the program. Examples of aspects: Money transition management, Security, Logging. 
@@ -60,19 +60,19 @@ AOP advantages:
 </p>
 
 <hr/>
-<h4>
+<h2>
 6. SOLID prensiplerini kısaca açıklayınız. Sizce her koşulda bu prensipler çerçevesinde mi kod yazılmalıdır ? Neden ?
-</h4>
+</h2>
 
 <hr/>
-<h4>
+<h2>
 7. Swagger nedir, ne amaçla kullanılmaktadır ?
-</h4>
+</h2>
 
 <hr/>
-<h4>
+<h2>
 8. Richardson Maturity Model’i seviyeleriyle birlikte açıklayınız.
-</h4>
+</h2>
 
 <p>
   It is a model that was designed to breakdown the REST practices into three steps (levels).
@@ -85,9 +85,9 @@ AOP advantages:
 </p>
 
 <hr/>
-<h4>
+<h2>
 9. URL, URI, URN kavramlarını bir örnek üzerinden açıklayınız.
-</h4>
+</h2>
 
 <p>
 URL ve URN, URI'nin alt kümeleridir. Ancak bir URI, bir URL veya bir URN olabilir.
@@ -113,9 +113,9 @@ namespace-specific string (NSS): 6e8bc430-9c3a-11d9-9669-0800200c9a66
 </p>
 
 <hr/>
-<h4>
+<h2>
 10. Idempotency nedir ? Hangi HTTP metotları idempotent’ tir ?
-</h4>
+</h2>
 
 <p>
   Idempotency is the concept that an identical request sent multiple times will always have the same effect. This concept is used to avoid mistakes from the client-side code. The client code might be written in a way that unintentionally sends duplicate requests. This mistake should handled to avoid errors on the server. 
@@ -128,10 +128,10 @@ namespace-specific string (NSS): 6e8bc430-9c3a-11d9-9669-0800200c9a66
 </p>
 
 <hr/>
-<h4>
+<h2>
 11. RFC (Request For Comment) neyi ifade etmektedir ? HTTP hangi RFC dokümanında açıklanmıştır ? Bu dokümanda HTTP hakkında
 ne tür bilgiler yer almaktadır ?
-</h4>
+</h2>
 
 <p>
 Request for Comment (RFC): Bir teknolojinin özelliklerini açıklamak için Internet Engineering Task Force (IETF) tarafından yayınlanan bir belge. Bir RFC onaylandığında, resmi bir standart belge haline gelir. Onaydan sonra, belge üzerinde her hangi bir değişiklik yapılmasına izin verilmez.
