@@ -69,6 +69,22 @@ AOP advantages:
 6. SOLID prensiplerini kısaca açıklayınız. Sizce her koşulda bu prensipler çerçevesinde mi kod yazılmalıdır ? Neden ?
 </h2>
 
+<p>
+
+  Single Responcibility Principle: Her sınıf yalnızca bir işlevsellikten sorumludur.
+
+  Open-Closed Prinicple: Projenin bileşenleri diğer sınıflardan kullanılabilir olup. Sınıfı düzeltmeye izin verilmemelidir.
+
+  Liskov Substitution Principle: Subclass objeleri, superclass objeleri yerine kullanmamız mümkün olması gerek.
+
+  Interface Segregation Principle: Client'ın kullanmadığı metotlara bağlı kalmamalıdır.
+
+  Dependency Inversion Principle: High-level modüller, low-level modüllerden bağımsız olmalıdır. 
+  
+  <bold><i>Teorik olarak, bu prensiplere uyulmalıdır çünkü kodumuzu korumaya yardımcı olurlar. Ancak pratikte yazılım prensiplerini tam olarak takip etmek her zaman zordur.</i></bold>
+  
+</p>
+
 <hr/>
 <h2>
 7. Swagger nedir, ne amaçla kullanılmaktadır ?
