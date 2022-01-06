@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @org.springframework.web.bind.annotation.RestController
-public class RestController {
+public class RequestsController {
 
     ArrayList<Member> members = new ArrayList<>();
 
