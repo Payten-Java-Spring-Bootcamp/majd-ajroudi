@@ -77,7 +77,7 @@ AOP avantajları:
 
   Liskov Substitution Principle: Subclass objeleri, superclass objeleri yerine kullanmamız mümkün olması gerek.
 
-  Interface Segregation Principle: Client'ın kullanmadığı metotlara bağlı kalmamalıdır.
+  Interface Segregation Principle: Client'ın kullanmadığı metodlara bağlı kalmamalıdır.
 
   Dependency Inversion Principle: High-level modüller, low-level modüllerden bağımsız olmalıdır. 
   
@@ -90,6 +90,10 @@ AOP avantajları:
 7. Swagger nedir, ne amaçla kullanılmaktadır ?
 </h2>
 
+<p>
+Swagger, bir projenin API'sini bir JSON veya YML dosyalarına aktarmak için kullanılan bir araçtır. Bu araç, Frontend ve Backend geliştiriciler arasındaki iletişimi ve üretkenliği artırır.
+</p>
+
 <hr/>
 <h2>
 8. Richardson Maturity Model’i seviyeleriyle birlikte açıklayınız.
@@ -100,7 +104,7 @@ AOP avantajları:
   
    1. Seviye: Modelin ilk seviyesi kaynaklarla ilgilenir. Bu düzey, tüm istekleri tek bir endpoint'e göndermek yerine birden çok endpoint geliştirmeyi içerir.
   
-   2. Seviye: Bu seviyede, HTTP metotlardan faydalanırız. Örneğin, Client veritabanında kritik değişiklikler yapmıyorsa veya sadece sunucudan veri alıyorsa, Client GET kullanmalıdır. Diğer durumlarda, Client sistemden bir randevu alıyor veya mevcut bir randevuyu değiştirmek istiyor olabilir, bu durumda Client POST veya PUT kullanmalıdır.
+   2. Seviye: Bu seviyede, HTTP metodlardan faydalanırız. Örneğin, Client veritabanında kritik değişiklikler yapmıyorsa veya sadece sunucudan veri alıyorsa, Client GET kullanmalıdır. Diğer durumlarda, Client sistemden bir randevu alıyor veya mevcut bir randevuyu değiştirmek istiyor olabilir, bu durumda Client POST veya PUT kullanmalıdır.
   
    3. Seviye: Müşteri, gönderilen bir istek için yanıt aldığında, diğer istekler için gereken URI'yi bilmek zorundadır. Üçüncü düzeyde, sunucu, istemcinin ne tür hizmetleri alabileceklerini ve bunları nasıl alabileceklerini anlatmak için ihtiyaç duyabileceği URI'leri gönderir.
 </p>
@@ -135,14 +139,14 @@ namespace-specific string (NSS): 6e8bc430-9c3a-11d9-9669-0800200c9a66
 
 <hr/>
 <h2>
-10. Idempotency nedir ? Hangi HTTP metotları idempotent’ tir ?
+10. Idempotency nedir ? Hangi HTTP metodları idempotent’ tir ?
 </h2>
 
 <p>
     Idempotency, birden çok kez gönderilen aynı isteğin her zaman sunucuya aynı etkiye sahip olacağı kavramıdır. Bu kavram, Client tarafı kodundan kaynaklanan hataları önlemek için kullanılır. Client kodu, istemeden yinelenen istekler gönderecek şekilde yazılmış olabilir. Bu hata, sunucudaki hataları önlemek için ele alınmalıdır.
 
   GET: sunucuda önemli değişiklikler yapmadan her zaman aynı sonucu verir. 
-  PUT: sunucudaki mevcut varlığı güncellemek için kullanılır. PUT metotu N kez tetiklendiğini varsayarsak. N'ci istek her zaman N-1 isteğinin üzerine yazacaktır. 
+  PUT: sunucudaki mevcut varlığı güncellemek için kullanılır. PUT metodu N kez tetiklendiğini varsayarsak. N'ci istek her zaman N-1 isteğinin üzerine yazacaktır. 
   DELETE: Mevut bir veri sunucudan kaldırmak için kullanılır. İlk istek, 200 veya 204 yanıt durumunu alacak ve veri zaten ilk istekte silinmiş olduğundan, diğer tüm istekler bir yanıt durumu 404 (Bulunamadı) alacaktır. Yanıt farklı olsa da istekler sunucuyu farklı bir şekilde değiştirmez.
 
   Bu nedenle, GET, PUT ve DELETE, Idempotent yöntemler olarak kabul edilir.
