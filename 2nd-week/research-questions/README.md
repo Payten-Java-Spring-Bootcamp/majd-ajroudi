@@ -139,13 +139,13 @@ namespace-specific string (NSS): 6e8bc430-9c3a-11d9-9669-0800200c9a66
 </h2>
 
 <p>
-  Idempotency is the concept that an identical request sent multiple times will always have the same effect. This concept is used to avoid mistakes from the client-side code. The client code might be written in a way that unintentionally sends duplicate requests. This mistake should handled to avoid errors on the server. 
-  
-  GET: will always respond with the same result without making significant changes to the server. 
-  PUT: is used to update existing entity in the server. Assuming that PUT method has been triggered N times, then the Nth request will always overwrite the N-1 request.
-  DELETE: is used to remove an entity from the server. The first request will receive a response status of 200 or 204, and all the trailing requests will receive a response status 404 (Not Found) because the entity has already been deleted at the first request. Although the response is different, the requests do not change the server in a different way. 
-  
-  Thus, GET, PUT, and DELETE are considered Idempotent methods. 
+    Idempotency, birden çok kez gönderilen aynı isteğin her zaman sunucuya aynı etkiye sahip olacağı kavramıdır. Bu kavram, Client tarafı kodundan kaynaklanan hataları önlemek için kullanılır. Client kodu, istemeden yinelenen istekler gönderecek şekilde yazılmış olabilir. Bu hata, sunucudaki hataları önlemek için ele alınmalıdır.
+
+  GET: sunucuda önemli değişiklikler yapmadan her zaman aynı sonucu verir. 
+  PUT: sunucudaki mevcut varlığı güncellemek için kullanılır. PUT metotu N kez tetiklendiğini varsayarsak. N'ci istek her zaman N-1 isteğinin üzerine yazacaktır. 
+  DELETE: Mevut bir veri sunucudan kaldırmak için kullanılır. İlk istek, 200 veya 204 yanıt durumunu alacak ve veri zaten ilk istekte silinmiş olduğundan, diğer tüm istekler bir yanıt durumu 404 (Bulunamadı) alacaktır. Yanıt farklı olsa da istekler sunucuyu farklı bir şekilde değiştirmez.
+
+  Bu nedenle, GET, PUT ve DELETE, Idempotent yöntemler olarak kabul edilir.
 </p>
 
 <hr/>
