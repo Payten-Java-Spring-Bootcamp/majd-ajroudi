@@ -10,7 +10,13 @@ Imperative Programming ve Declarative Programming kavramlarını kısaca açıkl
 Veri tabanlarının sorgu optimizasyonlarında index oluşturmanın avantajı nedir? Sık index kullanmak bir probleme yol açar mı?
 </h3>
 
-<p></p>
+<p>
+  Database indexing, bir veritabanın performansı artırmak için kullanılan bir tekniktir. Vertitabanındaki iki sütuna dayanır, Search Key ve Data Reference. Vertitabanı indekslemenin amacı, her bir grubuna bir indekx atmaktır.
+  
+  Search key, veritabanındak, Primary Key ile aynıdır (Verştabanının sırlanmaması durumunda bir avantajdır). Data Reference, Search key bulunduğu bloğa ait pointer saklar.
+  
+  Veritabanı indeksleme, bellek erişimi azaltılır ve dolaysıyla veritabanının performansını gelişttirir. Büyük sayıda olduğu veritabanıda bir query işletmek için veritabanın performansını yükseltilir. 
+</p>
 
 <hr />
 
