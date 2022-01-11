@@ -70,12 +70,6 @@ Thread Pool nedir? Nerelerde kullanılır?
 Scalability nedir? Horizontal ve Vertical Scalability kavramlarını açıklayınız.
 </h3>
 
-Scalability is a system's property which refers to its ability to increase in performance. A system is considered scalable if its performance is not affected with the increasing number of users, database queries, ...etc.
-
-When a system can no longer support the number of users, then the systems capacity should be increased. Horizontal and vertical scalability are two different ways of improving the capacity of a system. 
-
-Horizontal scaling refers to increasing the capacity of the system by adding extra resources (machines) to the existing system (scaling out). Vertical scaling refers to increasing the capacity by adding more power to the existing machine (i.e. CPU, RAM) vertical scaling is also refered to as "scaling up". 
-
 <p>
 Scalability, bir sistemin performansını artırma yeteneğini ifade eden bir özelliğidir. Artan kullanıcı sayısı, veritabanı sorguları vb. ile performansı etkilenmeyen scalable bir sistem olarak kabul edilir.
 
