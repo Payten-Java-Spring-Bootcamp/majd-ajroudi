@@ -2,7 +2,11 @@
 Imperative Programming ve Declarative Programming kavramlarını kısaca açıklayıp farklarını belirtiniz.
 </h3>
 
-<p></p>
+<p>
+Imperative Programming, geliştiricinin ne elde etmek istediğini, nasıl elde edileceğine ilişkin kontrol akışının bir açıklamasıyla ifade eden bir programlama paradigmasıdır.
+
+Declarative Programming, neyi elde etmek istediğimizi ancak nasıl elde edeceğimizi ifade etmeyen bir paradigmadır.
+</p>
 
 <hr />
 
