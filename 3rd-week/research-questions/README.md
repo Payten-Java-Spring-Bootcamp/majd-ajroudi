@@ -60,8 +60,6 @@ Long lived transaction kavramı hangi tip transactionları ifade etmektedir? Dez
 Thread Pool nedir? Nerelerde kullanılır?
 </h3>
 
-Thread pool is a software design pattern used to achieve concurrency during the execution of a program. Thread pool maintains multiple threads and assigns tasks to each thread so that the tasks are executed concurrently. This implemenration of a computer program improves the performance by creating and destorying threads for small tasks. Consequently this reduces the latency of the program.
-
 <p>
   Thread Pool, bir programın yürütülmesi sırasında eşzamanlılık sağlamak için kullanılan bir yazılım tasarım modelidir. Thread pool, birden çok iş parçacığını korur ve görevlerin aynı anda yürütülmesi için her iş parçacığına görevler atar. Bir bilgisayar programının bu şekilde uygulanması, küçük görevler için iş parçacıkları oluşturup bunları imha ederek performansı artırır. Sonuç olarak bu, programın execution time'ı azaltır.
 </p>
@@ -72,7 +70,19 @@ Thread pool is a software design pattern used to achieve concurrency during the 
 Scalability nedir? Horizontal ve Vertical Scalability kavramlarını açıklayınız.
 </h3>
 
-<p></p>
+Scalability is a system's property which refers to its ability to increase in performance. A system is considered scalable if its performance is not affected with the increasing number of users, database queries, ...etc.
+
+When a system can no longer support the number of users, then the systems capacity should be increased. Horizontal and vertical scalability are two different ways of improving the capacity of a system. 
+
+Horizontal scaling refers to increasing the capacity of the system by adding extra resources (machines) to the existing system (scaling out). Vertical scaling refers to increasing the capacity by adding more power to the existing machine (i.e. CPU, RAM) vertical scaling is also refered to as "scaling up". 
+
+<p>
+Scalability, bir sistemin performansını artırma yeteneğini ifade eden bir özelliğidir. Artan kullanıcı sayısı, veritabanı sorguları vb. ile performansı etkilenmeyen scalable bir sistem olarak kabul edilir.
+
+Bir sistem artık kullanıcı sayısını destekleyemediğinde, sistem kapasitesi artırılmalıdır. Horizontal ve vertical scaling, bir sistemin kapasitesini artırmanın iki farklı yoludur.
+
+Horizontal scaling, mevcut sisteme ekstra kaynaklar (makineler) ekleyerek (scaling out) sistemin kapasitesini arttırmayı ifade eder. Vertical scaling, mevcut makineye (yani CPU, RAM) daha fazla güç ekleyerek kapasitenin artırılması anlamına gelir. Vertical scaling, "scaling up" olarak da adlandırılır.
+</p>
 
 <hr />
 
