@@ -60,7 +60,11 @@ Long lived transaction kavramı hangi tip transactionları ifade etmektedir? Dez
 Thread Pool nedir? Nerelerde kullanılır?
 </h3>
 
-<p></p>
+Thread pool is a software design pattern used to achieve concurrency during the execution of a program. Thread pool maintains multiple threads and assigns tasks to each thread so that the tasks are executed concurrently. This implemenration of a computer program improves the performance by creating and destorying threads for small tasks. Consequently this reduces the latency of the program.
+
+<p>
+  Thread Pool, bir programın yürütülmesi sırasında eşzamanlılık sağlamak için kullanılan bir yazılım tasarım modelidir. Thread pool, birden çok iş parçacığını korur ve görevlerin aynı anda yürütülmesi için her iş parçacığına görevler atar. Bir bilgisayar programının bu şekilde uygulanması, küçük görevler için iş parçacıkları oluşturup bunları imha ederek performansı artırır. Sonuç olarak bu, programın execution time'ı azaltır.
+</p>
 
 <hr />
 
