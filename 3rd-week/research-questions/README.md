@@ -44,7 +44,13 @@ ORM kütüphaneleri kullanmak her zaman avantajlı mıdır? ORM kütüphanelerin
 Domain Specific Language (DSL) kavramını açıklayınız.
 </h3>
 
-<p></p>
+<p>
+  Domain-specific language (DSL), belirlii bir uygulama (etki alanı) için tasarlanan bir dildir. DSL'in bir örneği HTML ve CSS'dir.
+  
+  DSL, belirli bir uygulamada bir tür problemi çözmek için oluşturulur. Her ne kadar diğer alanlardan sorunları cözebilse de, bunu yapması amaçlanmamıştır.
+  
+  DSL'ler dil türü ile alt kategorize edilebilir: Domain-specific markup language (İşaretleme Dili), Domain-specific modeling language (Modelleme dili), Domain-specific programming language (Progamlama Dili)
+</p>
 
 <hr />
 
