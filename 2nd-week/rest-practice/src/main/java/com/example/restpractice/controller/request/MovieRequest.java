@@ -1,9 +1,8 @@
-package com.example.restpractice.movie.controller.request;
+package com.example.restpractice.controller.request;
 
-import com.example.restpractice.movie.MovieGenre;
-import com.example.restpractice.movie.service.Movie;
+import com.example.restpractice.MovieGenre;
+import com.example.restpractice.service.Movie;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 

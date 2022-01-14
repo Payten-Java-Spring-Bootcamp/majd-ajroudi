@@ -1,6 +1,6 @@
-package com.example.restpractice.movie.controller.response;
+package com.example.restpractice.controller.response;
 
-import com.example.restpractice.movie.service.Rate;
+import com.example.restpractice.service.Rate;
 import lombok.Builder;
 import lombok.Getter;
 

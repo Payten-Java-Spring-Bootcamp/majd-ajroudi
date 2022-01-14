@@ -1,7 +1,7 @@
-package com.example.restpractice.movie.repository;
+package com.example.restpractice.repository;
 
 
-import com.example.restpractice.movie.MovieGenre;
+import com.example.restpractice.MovieGenre;
 import lombok.Getter;
 import lombok.Setter;
 

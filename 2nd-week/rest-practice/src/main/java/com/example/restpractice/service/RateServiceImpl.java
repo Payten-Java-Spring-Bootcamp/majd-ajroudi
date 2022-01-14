@@ -1,9 +1,9 @@
-package com.example.restpractice.movie.service;
+package com.example.restpractice.service;
 
-import com.example.restpractice.movie.repository.MovieDao;
-import com.example.restpractice.movie.repository.MovieEntity;
-import com.example.restpractice.movie.repository.RateDao;
-import com.example.restpractice.movie.repository.RateEntity;
+import com.example.restpractice.repository.MovieDao;
+import com.example.restpractice.repository.MovieEntity;
+import com.example.restpractice.repository.RateDao;
+import com.example.restpractice.repository.RateEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

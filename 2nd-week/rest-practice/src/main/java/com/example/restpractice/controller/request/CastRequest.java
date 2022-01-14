@@ -1,10 +1,11 @@
-package com.example.restpractice.movie.controller.response;
+package com.example.restpractice.controller.request;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class CastResponse {
+public class CastRequest {
     private String name;
+
 }

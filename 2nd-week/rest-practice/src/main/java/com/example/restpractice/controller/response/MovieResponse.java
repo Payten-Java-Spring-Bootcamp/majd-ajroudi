@@ -1,7 +1,7 @@
-package com.example.restpractice.movie.controller.response;
+package com.example.restpractice.controller.response;
 
-import com.example.restpractice.movie.MovieGenre;
-import com.example.restpractice.movie.service.Movie;
+import com.example.restpractice.MovieGenre;
+import com.example.restpractice.service.Movie;
 import lombok.Builder;
 import lombok.Getter;
 

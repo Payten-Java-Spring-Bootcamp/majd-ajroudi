@@ -1,4 +1,4 @@
-package com.example.restpractice.movie.controller.response;
+package com.example.restpractice.controller.response;
 
 import lombok.Builder;
 import lombok.Getter;

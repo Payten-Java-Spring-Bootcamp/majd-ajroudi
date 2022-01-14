@@ -1,10 +1,9 @@
-package com.example.restpractice.movie.controller;
+package com.example.restpractice.controller;
 
-import com.example.restpractice.movie.controller.request.RateRequest;
-import com.example.restpractice.movie.controller.response.RateResponse;
-import com.example.restpractice.movie.service.Movie;
-import com.example.restpractice.movie.service.Rate;
-import com.example.restpractice.movie.service.RateService;
+import com.example.restpractice.controller.request.RateRequest;
+import com.example.restpractice.controller.response.RateResponse;
+import com.example.restpractice.service.Rate;
+import com.example.restpractice.service.RateService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

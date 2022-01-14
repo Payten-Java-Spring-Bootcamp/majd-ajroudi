@@ -1,4 +1,4 @@
-package com.example.restpractice.movie;
+package com.example.restpractice;
 
 public enum MovieGenre {
     ACTION,

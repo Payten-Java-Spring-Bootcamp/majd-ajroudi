@@ -1,7 +1,7 @@
-package com.example.restpractice.movie.service;
+package com.example.restpractice.service;
 
-import com.example.restpractice.movie.MovieGenre;
-import com.example.restpractice.movie.repository.MovieEntity;
+import com.example.restpractice.MovieGenre;
+import com.example.restpractice.repository.MovieEntity;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

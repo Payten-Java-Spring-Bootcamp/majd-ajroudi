@@ -1,4 +1,4 @@
-package com.example.restpractice.movie.repository;
+package com.example.restpractice.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

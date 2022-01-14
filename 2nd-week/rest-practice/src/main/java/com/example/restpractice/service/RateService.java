@@ -1,4 +1,4 @@
-package com.example.restpractice.movie.service;
+package com.example.restpractice.service;
 
 import java.util.List;
 

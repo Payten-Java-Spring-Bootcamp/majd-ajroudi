@@ -1,6 +1,6 @@
-package com.example.restpractice.movie.controller.request;
+package com.example.restpractice.controller.request;
 
-import com.example.restpractice.movie.service.Rate;
+import com.example.restpractice.service.Rate;
 import lombok.Getter;
 import lombok.Setter;
 
