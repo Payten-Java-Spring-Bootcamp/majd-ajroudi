@@ -5,6 +5,10 @@ import com.example.restpractice.movie.repository.MovieEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 @RequiredArgsConstructor
 public class MovieServiceImpl implements MovieService {
@@ -21,5 +25,13 @@ public class MovieServiceImpl implements MovieService {
     public Movie retrieve(Long id) {
         MovieEntity entity = movieDao.retrieve(id);
         return Movie.convertFrom(entity);
+    }
+
+    @Override
+    public List<Movie> retrieve() {
+        MovieEntity[] entities = movieDao.retrieve();
+        return Arrays.stream(entities)
+                .map(Movie::convertFrom)
+                .collect(Collectors.toList());
     }
 }

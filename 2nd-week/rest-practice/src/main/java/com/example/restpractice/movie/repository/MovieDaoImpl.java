@@ -23,4 +23,9 @@ public class MovieDaoImpl implements MovieDao{
         if (movieEntityOptional.isPresent()) return movieEntityOptional.get();
         throw new RuntimeException();
     }
+
+    @Override
+    public MovieEntity[] retrieve() {
+        return movieJpaRepository.findAll().toArray(new MovieEntity[0]);
+    }
 }

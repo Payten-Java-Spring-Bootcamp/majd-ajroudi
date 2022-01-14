@@ -10,15 +10,16 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/movies")
+// @RequestMapping("/movies")
 public class MovieController {
 
     private final MovieService movieService;
 
-    @PostMapping("/")
+    @PostMapping("/movies")
     @ResponseStatus(HttpStatus.CREATED)
     public MovieCreateResponse create(@RequestBody @Valid MovieRequest request) {
         Movie movie = request.convertToMovie();
@@ -26,9 +27,14 @@ public class MovieController {
         return MovieCreateResponse.convertToMovieResponse(id);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/movies/{id}")
     public MovieResponse retrieve(@PathVariable Long id) {
         Movie movie = movieService.retrieve(id);
         return MovieResponse.convertFrom(movie);
+    }
+
+    @GetMapping("/movies")
+    public List<Movie> retrieve() {
+        return movieService.retrieve();
     }
 }
