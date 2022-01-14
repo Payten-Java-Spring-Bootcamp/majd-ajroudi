@@ -14,6 +14,7 @@ public class Movie {
     private MovieGenre genre;
     private Integer releaseYear;
     private String director;
+    private Long id;
 
     MovieEntity convertToMovieEntity() {
         MovieEntity movieEntity = new MovieEntity();
@@ -30,6 +31,7 @@ public class Movie {
                 .genre(entity.getGenre())
                 .releaseYear(entity.getReleaseYear())
                 .director(entity.getDirector())
+                .id(entity.getId())
                 .build();
     }
 

@@ -17,6 +17,7 @@ public class MovieResponse {
     private Integer releaseYear;
     private String director;
     private List<CastResponse> castList;
+    private Long id;
 
     public static MovieResponse convertFrom(Movie movie) {
         return MovieResponse.builder()
@@ -24,6 +25,7 @@ public class MovieResponse {
                 .genre(movie.getGenre())
                 .releaseYear(movie.getReleaseYear())
                 .director(movie.getDirector())
+                .id(movie.getId())
                 .build();
     }
 }
