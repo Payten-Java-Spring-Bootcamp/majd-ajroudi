@@ -90,6 +90,10 @@ Horizontal scaling, mevcut sisteme ekstra kaynaklar (makineler) ekleyerek (scali
 Data replication ve sharding nedir? Aralarında nasılı bir fark bulunmaktadır?
 </h3>
 
-<p></p>
+<p>
+  Data replication, yüksek kullanılabilirlik, yedekleme ve olağanüstü durum kurtarma elde etmek için verilerin sürekli olarak başka bir sunucuya/Cloud'a kopyalandığı süreçtir.
+
+  Data sharding, bir veri kümesini birden çok veritabanına ayırma ve ardından birden çok makineye dağıtma işlemidir. Bu işlem, web sitesinde veya uygulamada yüksek trafiği işlemek için yapılır.
+</p>
 
 
