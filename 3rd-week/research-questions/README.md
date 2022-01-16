@@ -51,7 +51,19 @@ Veri tabanlarının sorgu optimizasyonlarında index oluşturmanın avantajı ne
 ORM kütüphaneleri kullanmak her zaman avantajlı mıdır? ORM kütüphanelerinin ne gibi dezavantajları olabilir?
 </h3>
 
-<p></p>
+<p>
+  Nesne-ilişkisel eşleme, nesne yönelimli bir ortamda uyumsuz türlere sahip verileri dönüştürmek için kullanılan bir programlama tekniğidir.
+
+Avantajlar:
+- sql sorguları yazmaya gerek yok.
+- veritabanından bağımsız: veritabanına özel kod yazmaya gerek yoktur. Bu, birden çok veritabanıyla çalışırken çok faydalı olabilir.
+- Tablolar arasındaki bağımlılıklarla ilgilenir.
+- İşlemleri, commit'leri ve rollback'leri korur
+
+Dezavantajları:
+- Veritabanına erişimde genel gider işlemleri olacaktır.
+- Geliştiriciler, veritabanının performansını iyileştirmek için daha az kontrole ve daha az esnekliğe sahiptir.
+</p>
 
 <hr />
 
