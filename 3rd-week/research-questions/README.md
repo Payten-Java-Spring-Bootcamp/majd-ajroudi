@@ -28,7 +28,22 @@ Veri tabanlarının sorgu optimizasyonlarında index oluşturmanın avantajı ne
 İlişkisel veritabanları için normalizasyon kavramı neyi ifade etmektedir? İlk 3 normal formu örnek üzerinden açıklayınız.
 </h3>
 
-<p></p>
+<p>
+  Veritabanı normalizasyon, veri fazlalığını önlemek için kullanılan bir tekniktir. Normalizasyon, büyük tabloları daha küçük tablolara böler ve ilişkileri kullanarak bunları birbirine bağlar.
+
+İlk normal form: 
+  - bir tablodaki her sütun yalnızca tek değerler içermelidir (Set'lere izin verilmez)
+  - Her satır benzersiz olmalıdır. 
+  - Aynı sütundaki tüm girişler aynı türde olmalıdır
+
+İkinci normal form: 
+  - ilk normal formu sağlamalıdır. 
+  - Partial Dependency içermemelidir.
+
+Üçüncü normal form: 
+  - İkinci normal formu sağlamalıdır. 
+  - Transitive Dependency içermemelidir.
+</p>
 
 <hr />
 
