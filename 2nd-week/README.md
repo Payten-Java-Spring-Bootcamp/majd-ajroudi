@@ -26,7 +26,7 @@ için olabilir.)
     <li>
       @ComponentScan: Spring bileşenlerin taramasına izin verir. Java'da, @Component, @Configuration, @Service'a göre yazılan sınıflar, Spring tarafından otomatik olarak algılanır. @ComponentScan, taranması gereken bileşenleri belirliyor.
     </li>
-</ul>
+  </ul>
 </p>
 
 <hr/>
