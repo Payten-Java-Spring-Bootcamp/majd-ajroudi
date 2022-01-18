@@ -42,6 +42,11 @@ Bu tür bir test, uygulamanın kullanılan bir sürümüyle (A) ve önerilen ba�
 
 <p>
 
+Mutation test, yazılım testleri tasarlama ve mevcut testin kalitesini değerlendirme sürecidir.
+
+Bu tür testler, mevcut testin tanıyıp tanımayacağını (mutantları öldürüp öldürmediğini) değerlendirmek için mevcut yazılımda küçük mutasyonlar yapar.
+
+Mutation testlerinin amacı, kötü test edilmiş kod parçalarını belirlemek, zayıf testleri belirlemek ve mutasyon puanını hesaplamaktır. Mutasyon puanı, öldürülen mutant sayısı bölü yazılıma yerleştirilen toplam mutant sayısı.
 </p>
 
 <h3>
