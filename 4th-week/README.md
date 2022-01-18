@@ -21,7 +21,9 @@ A/B test nedir?
 </h3>
 
 <p>
-
+A/B test, İki benzer ürünü, kullanıcı deneyimini etkileyebilecek bir değişkendeki (vector variable) değişiklikle karşılaştırma ilkesine dayanan bir kullanıcı deneyimi test yöntemi. 
+ 
+Bu tür bir test, uygulamanın kullanılan bir sürümüyle (A) ve önerilen başka bir sürümle (B) başlar. B versiyonu, bir faktör (değişken) dışında, A versiyonuyla aynıdır; örneğin, arka plan rengi, metin hizalaması ...vb. Vektör değişkeni, bu değişikliğin kullanıcı deneyimini iyileştireceği hipotezine dayalı olarak belirlenir. Daha sonra her iki versiyon da kullanıcıya sunulur ve sonuçlara göre kullanılacak versiyon belirlenir.
 </p>
 
 <h3>
