@@ -11,7 +11,9 @@
 </h3>
 
 <p>
+ Regression test, yazılımın işlevselliğini refactor edildikten sonra veya geliştirildikten sonra test etmek için kullanılan bir süreçtir.
 
+Regression test genellikle hata düzeltmeleri, yazılım geliştirme, konfigürasyon değişiklikleri veya elektronik bileşenlerin değiştirilmesinden sonra yapılır.
 </p>
 
 <h3>
