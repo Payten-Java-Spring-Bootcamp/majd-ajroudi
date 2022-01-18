@@ -31,7 +31,9 @@ Bu tür bir test, uygulamanın kullanılan bir sürümüyle (A) ve önerilen ba�
 </h3>
 
 <p>
+ Genel tanımıyla Black Box testi, bir yazılımın iç yapısı bilinmeden yapılan test türüdür. White Box testi ise yazılımın iç yapısı bilgisi ile yapılır.
 
+ White Box testi genellikle yazılım geliştiriciler tarafından yapılır ve işlevsellikten ziyade yazılımın yapısını test eder, bu nedenle testçinin programlama bilgisine sahip olması gerekir. Black Box testi ise yazılım testçileri tarafından yapılır ve yazılımın yapısını bilmeden yazılımın işlevselliğini test eder, bu nedenle testçi tarafından herhangi bir programlama bilgisine sahip olması gerekmez.
 </p>
 
 <h3>
