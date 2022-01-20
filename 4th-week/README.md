@@ -55,6 +55,17 @@ Mutation testlerinin amacı, kötü test edilmiş kod parçalarını belirlemek,
 
 <p>
 
+Behavior-Drive Development (BDD), Agile'in yazılım geliştiriciler, testçiler ve müşteri temsilcileri arasındaki işbirliğini geliştirmeye odaklanan bir süreçtir. BDD Test-Driven Development'in (TDD) bir uzantısıdır. TDD Aşağıdaki gibi bir döngü içinde çalışmaktadir:
+- Bir test başarısız sonuçlanır
+- Testi düzeltmek için bazı kodlar yazılır
+- Test başarılı sonuçlanır
+- Yazılımı geliştirmek için yeniden düzenleme yapılır
+- Başka bir test başarısız olur.
+
+BDD Sistemin davranışını TDD'nin her döngüsünde test eder. BDD testleri üç adıma ayrılır:
+- Bağlam: Başlangıç durumu
+- Vakar: Kullanıcı tarafından gerçekleştirilen eylem
+- Sonuçlar: Olay gerçekleştiğinde sistemin beklenen davranışı.
 </p>
 
 <h3>
