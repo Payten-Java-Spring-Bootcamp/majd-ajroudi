@@ -13,7 +13,9 @@
 </h3>
 
 <p>
-
+  Mutex bir locking mekanizmasıdır. Bu mekanizma dağıtılmış kaynaklarına (örneğin shared memory) erişmesine yönetir. Eğer birden fazla Thread çalışıyorsa ve bir thread-1 memory'e eişmek isterse, Mutex memory'yi kullanan başka thread yoksa thread-1 erişmesine izin verir, varsa diğer thread işlemi bittikten sonra thread-1 erişmesine izin verir.
+  
+  Semaphore, Mutex gibi çalışan bir mekanizmadır ama kaynağı kullanabilen thread'lerin sayısı değişebilir.
 </p>
 
 <h3>
