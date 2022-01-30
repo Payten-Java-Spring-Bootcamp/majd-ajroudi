@@ -3,11 +3,13 @@
 </h3>
 
 <p>
-
+  Parallel Programlama: bir program birden fazla CPU'de çalıştırmak. Ana CPU diğer cpu'lere thread'leri (işlemleri) dağıtıyor.
+  
+  Concurrent Programlama: Aynı CPU'de ve eş zamanda birden fazla thread'i çalıştırmaktır.
 </p>
 
 <h3>
-  Mutex ve Semaphore kavralarını açıklayınız. Hangi tür durumlarda bunlara başvurmamız gerekir?
+  Mutex ve Semaphore kavralamrını açıklayınız. Hangi tür durumlarda bunlara başvurmamız gerekir?
 </h3>
 
 <p>
