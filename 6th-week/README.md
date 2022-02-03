@@ -15,13 +15,17 @@
   API Gateway is a pattern that suggests adding an abstraction layer between the Frontend and the several Backend services. This layer acts as a middleware between the client and the services and forwards the requests coming from the client to the suitable service. 
   
   Advantages:
-    - Freedom of refactoring and flexibility on the backend side.
-    - Ability to handle different kinds of clients
-    - Freeing the frontend developers from the need to understand the backend structure. 
+  <ul>
+    <li>Freedom of refactoring and flexibility on the backend side.</li>
+    <li>Ability to handle different kinds of clients</li>
+    <li>No need for the frontend developers to understand the backend structure.</li>
+  </ul>
   
   Disadvantages:
-    - Overhead execution time because of the added layer
-    - Developing the API Gateway layer can be time consuming.
+  <ul>
+    <li>Overhead execution time because of the added layer</li>
+    <li>Developing the API Gateway layer can be time consuming.</li>
+  </ul>
 </p>
 
 
