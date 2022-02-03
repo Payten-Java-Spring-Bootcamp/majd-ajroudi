@@ -8,13 +8,33 @@
 
 
 <h3>
+  4. API Gateway pattern’ı açıklayınız.
+</h3>
+
+<p>
+  API Gateway is a pattern that suggests adding an abstraction layer between the Frontend and the several Backend services. This layer acts as a middleware between the client and the services and forwards the requests coming from the client to the suitable service. 
+  
+  Advantages:
+    - Freedom of refactoring and flexibility on the backend side.
+    - Ability to handle different kinds of clients
+    - Freeing the frontend developers from the need to understand the backend structure. 
+  
+  Disadvantages:
+    - Overhead execution time because of the added layer
+    - Developing the API Gateway layer can be time consuming.
+</p>
+
+
+<h3>
   5. Backend for frontend (BFF) pattern’ ı açıklayınız.
 </h3>
 
 <p>
-  In a classic Frontend/Backend structure, the client side send a request to the backend and the backend in turn returns the data requested. However, an app that runs on multiple operating systems (web, mobile or alexa app) might decide to behave differently and thus a request from a web app requires a different from response from that for a mobile app. 
+  In a classic Frontend/Backend structure, the client side send a request to the backend and the backend in turn returns the data requested. However, an app that runs on multiple operating systems (web, iOS or Android app) might decide to behave differently and thus a request from a web app requires a different from response from that for a mobile app.
   
   Backend For Frontend (BFF) pattern solves this problem by suggesting that each client type should has a special backend service (bff) which acts as a middleware between the client and the general purpose backend services. 
+  
+  When comparing BFF pattern to the API Gateway pattern, BFF is nothing but an API Gateway pattern with a gateway built for each operating system (client type).
   
   <img alt="backend for frontend pattern explained" src="https://miro.medium.com/max/581/1*Hg4bB1sHypg5IHCXBW8DZA.png" style="width: 35%; height: auto;" />
 </p>
