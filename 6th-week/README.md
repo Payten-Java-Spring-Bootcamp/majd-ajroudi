@@ -93,7 +93,7 @@ kavramlarını açıklayınız.
 
 
 <h3>
-  Circuit-breaker pattern’ ı açıklayınız.
+  6. Circuit-breaker pattern’ ı açıklayınız.
 </h3>
 
 <p>
@@ -102,4 +102,15 @@ kavramlarını açıklayınız.
   This is achieved by adding a request interceptor at each microservice which keeps monitoring the number of successful and failing requests and according to a certain threshold the service decides to stop sending requests for a while. After the timeout period has passed the service starts sending requests again and monitor the performance. 
   
   This pattern is good because a latency in the response of one service causes latency in the response of the previous service down the chain. By applying Circuit-breaker pattern the chain is cut early keeping track of the performance of all the services in the architecture.
+</p>
+
+
+<h3>
+  7. Microservice chassis pattern’ ı kısaca açıklayınız.
+</h3>
+
+<p>
+  Microservice chassis is a framework that helps us setup the configuration and problem handling patterns at the beginning of the project; such as, circuit-breaker pattern and API Gateway pattern. 
+  
+  Microservice chassis pattern is a concept that suggests using a framework that handles the cross-cutting concerns. That is services and components that rely on each other should be handled using a framework, e.g. Spring Boot.
 </p>
