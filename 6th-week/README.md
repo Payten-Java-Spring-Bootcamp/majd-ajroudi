@@ -90,3 +90,16 @@ kavramlarını açıklayınız.
   
   <img alt="backend for frontend pattern explained" src="https://miro.medium.com/max/581/1*Hg4bB1sHypg5IHCXBW8DZA.png" style="width: 35%; height: auto;" />
 </p>
+
+
+<h3>
+  Circuit-breaker pattern’ ı açıklayınız.
+</h3>
+
+<p>
+  Circuit-breaker is a concept inspired by the electrical circuit which helps avoiding a problem in one microservice to cause an issue in all the other microservices. 
+  
+  This is achieved by adding a request interceptor at each microservice which keeps monitoring the number of successful and failing requests and according to a certain threshold the service decides to stop sending requests for a while. After the timeout period has passed the service starts sending requests again and monitor the performance. 
+  
+  This pattern is good because a latency in the response of one service causes latency in the response of the previous service down the chain. By applying Circuit-breaker pattern the chain is cut early keeping track of the performance of all the services in the architecture.
+</p>
