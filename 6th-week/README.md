@@ -30,6 +30,30 @@
   </ul>
 </p>
 
+<h3>
+  3. Continuous Integration, Continuous Delivery ve Continuous Deployment
+kavramlarını açıklayınız.
+</h3>
+
+<p>
+  <i>Continuous Integration:</i> a practice developed to avoid conflicts emerging while merging the codes of multiple developers. The practice states that:
+  
+  <ul>
+    <li>A developer must push their code modifications in small batches. Even if the feature is not finished yet. The reason for this is that even if a conflict emerges, solving it would be easier than solving a conflict with a full feature in it. 
+    </li>
+    <li>
+      An automation system must be placed before the merge. The system builds the code and tests it as soon as the developer pushes a new commit, if an error occurs or a test fails then this indicates the developer must solve the problem before their code is merged into the code base.
+    </li>
+  </ul>
+  
+  
+  <i>Continuous Delivery:</i> This automation process covers all the steps covered by CI with addition to another step, which is delivering the software to production. After CI work is done, the software must be moved from development environment to production environment. In Continuous Delivery this is done with a human factor (Manually).
+  
+  <i>Continuous Deployment:</i> It covers the same steps covered by Continuous Delivery; however, in the case of Continuous Deployment the decision whether we should move from development environment into production environment is automated.
+  
+  <img alt="CIntegratoin, CDeployment and CDelivery" src="https://i.stack.imgur.com/yOofB.png" style="width: 60%;"/>
+</p>
+
 
 <h3>
   4. API Gateway pattern’ı açıklayınız.
